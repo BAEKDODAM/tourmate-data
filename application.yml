@@ -16,13 +16,13 @@ spring:
     password: tourmate
 
   jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     open-in-view: false
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
         format_sql: true
         show_sql: true
 
